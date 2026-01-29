@@ -1,5 +1,3 @@
-## PRM Training (VisualPRM400K-style)
-
 ### What is in this folder
 - `src/internvl/`: training code used in our setup
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
