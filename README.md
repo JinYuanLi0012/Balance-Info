@@ -44,7 +44,4 @@ Example (single line):
 {"image":"subdir/000001.png","conversations":[{"from":"human","value":"..."} ,{"from":"gpt","value":"..."}]}
 ```
 
-### Notes / assumptions
-- This is a research artifact and assumes you already have model weights and data prepared locally.
-- If your JSONL fields differ (naming, nesting, or multi-image structure), adjust the dataset loader accordingly.
 
