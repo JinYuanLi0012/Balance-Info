@@ -1193,18 +1193,18 @@ def main():
         max_num_frame=data_args.max_num_frame,
     )
 
-    # 在 train_dataset 构建之后新增
+    
     eval_dataset = None
     if data_args.eval_meta_path is not None:
         eval_data_args = deepcopy(data_args)
         eval_data_args.meta_path = data_args.eval_meta_path
-        # 通常验证集不做数据增强，确保 meta 里 data_augment=false；这里不强改
+        
         eval_dataset = build_datasets(
             eval_data_args,
             tokenizer,
             tcs_loader,
             model,
-            group_by_length=False,  # 评估无需分组
+            group_by_length=False, 
             dynamic_image_size=eval_data_args.dynamic_image_size,
             use_thumbnail=eval_data_args.use_thumbnail,
             min_dynamic_patch=eval_data_args.min_dynamic_patch,
@@ -1315,3 +1315,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
