@@ -20,7 +20,7 @@ One simple way to call the script is:
 
 ```bash
 python -m torch.distributed.run \
-  --nproc_per_node=8 src/internvl/train/internvl_chat_finetune.py \
+  --nproc_per_node=4 src/internvl/train/internvl_chat_finetune.py \
   --model_name_or_path /path/to/checkpoint \
   --meta_path data/meta_visualprm400k.json \
   --output_dir /path/to/output_dir \
