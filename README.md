@@ -1,11 +1,8 @@
-## Code for PRM training
-
 ### Files
 - `src/internvl/`: training code used in our experiments
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
 - `data/meta_visualprm400k.json`: meta file describing datasets
 - `requirements.txt`: dependencies
-- `LICENSE.txt`: license
 
 ### Main entry
 - `src/internvl/train/internvl_chat_finetune.py`
