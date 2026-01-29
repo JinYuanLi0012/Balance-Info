@@ -16,7 +16,7 @@ The training script expects:
 
 
 ### Example training command
-One simple way to call the script is:
+One way to call the script is:
 
 ```bash
 python -m torch.distributed.run \
