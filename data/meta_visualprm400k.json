@@ -1,0 +1,10 @@
+{
+  "visualprm400k": {
+    "root": "/path/to/VisualPRM400K-v1.1-raw",
+    "annotation": "/path/to/VisualPRM400K-v1.1-raw/annotations/VisualPRM400K.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1
+  }
+}
+
