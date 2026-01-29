@@ -1,0 +1,10 @@
+{
+  "visualprm400k_soft": {
+    "root": "/path/to/VisualPRM400K-v1.1-raw",
+    "annotation": "/path/to/VisualPRM400K-v1.1-raw/annotations/ai2d_train_12k_en_20240410_extracted.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1
+  }
+}
+
