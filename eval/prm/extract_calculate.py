@@ -201,7 +201,6 @@ def calculate_accuracy(data):
         'accuracy': cnt / len(data),
     }
 
-    # 计算跨策略 accuracy 的均值（ave）
     selected_metrics = ['min', 'last', 'product', 'average', 'sum_logprob', 'max', 'sum_logit', 'mean_odd']
     accs = [results[k]['accuracy'] for k in selected_metrics if k in results]
     ave = sum(accs) / len(accs) if accs else 0.0
@@ -230,3 +229,4 @@ if __name__ == '__main__':
         ensure_ascii=False,
     )
     print(f'Results saved.')
+
