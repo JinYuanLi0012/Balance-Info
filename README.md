@@ -47,12 +47,13 @@ A small example:
 ### Evaluation
 Evaluation scripts are under `eval/`. See `eval/README.md` for more details.
 
-A simple example for Mathverse is:
+One example call:
 
 ```bash
-python eval/prm/evaluate_mathverse_prm.py \
+python eval/prm/evaluate_visualprocessbench_prm.py \
   --checkpoint /path/to/checkpoint \
-  --datasets mathverse \
+  --annotation /path/to/annotations.jsonl \
+  --image-root /path/to/images \
   --out-dir /path/to/output_dir
 ```
 
