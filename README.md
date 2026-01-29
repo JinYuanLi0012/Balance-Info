@@ -1,26 +1,25 @@
-## PRM Training (VisualPRM400K-style)
+## Code for PRM training
 
-### What is in this folder
-- `src/internvl/`: training code used in our setup
+### Files
+- `src/internvl/`: training code used in our experiments
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
-- `data/meta_visualprm400k.json`: a *template* for describing datasets
+- `data/meta_visualprm400k.json`: meta file describing datasets
 - `requirements.txt`: dependencies
 - `LICENSE.txt`: license
 
 ### Main entry
 - `src/internvl/train/internvl_chat_finetune.py`
 
-### Expected inputs (minimal)
-The entry script reads:
-- **a pretrained checkpoint path** (`--model_name_or_path`)
-- **a meta JSON** that points to your local data (`--meta_path`)
-- **an output directory** (`--output_dir`)
+### What the script needs
+The training script expects:
+- a pretrained checkpoint path (`--model_name_or_path`)
+- a meta JSON that points to your local data (`--meta_path`)
+- an output directory (`--output_dir`)
 - optionally a DeepSpeed JSON (`--deepspeed`)
 
-We use `--conv_style internvl2_5`. If you change the conversation template, you will need to keep the annotation format consistent.
 
-### Minimal training command (illustrative)
-A typical command (adjust paths / devices as needed) looks roughly like:
+### Example training command
+One simple way to call the script is:
 
 ```bash
 python -m torch.distributed.run \
@@ -30,13 +29,12 @@ python -m torch.distributed.run \
   --output_dir /path/to/output_dir \
   --deepspeed configs/zero_stage3_config.json \
   --conv_style internvl2_5
-  # plus any other arguments you normally use
 ```
 
 ### Dataset meta JSON
 The meta file maps dataset names to a small config. See `data/meta_visualprm400k.json`.
 
-Example (illustrative):
+A small example:
 ```json
 {
   "my_dataset": {
@@ -49,18 +47,15 @@ Example (illustrative):
 }
 ```
 
-### Annotation JSONL
-Each line is a JSON object. The loader expects at least:
-- `conversations`: a list of turns with `from` / `value`
-- `image`: a relative path (w.r.t. `root`) or a list of image paths
-- optional `length`: a token-length hint used for bucketing in some setups
+### Evaluation
+Evaluation scripts are under `eval/`. See `eval/README.md` for more details.
 
-Example (single line):
-```json
-{"image":"subdir/000001.png","conversations":[{"from":"human","value":"..."} ,{"from":"gpt","value":"..."}]}
+A simple example for Mathverse is:
+
+```bash
+python eval/prm/evaluate_mathverse_prm.py \
+  --checkpoint /path/to/checkpoint \
+  --datasets mathverse \
+  --out-dir /path/to/output_dir
 ```
-
-### Notes / assumptions
-- This is a research artifact and assumes you already have model weights and data prepared locally.
-- If your JSONL fields differ (naming, nesting, or multi-image structure), adjust the dataset loader accordingly.
 
