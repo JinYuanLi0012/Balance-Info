@@ -8,9 +8,16 @@
 
 --------------------------------
 
+**Supplementary Table 2.  Evaluation on VisualProcessBench for InternVL2.5-8B with two additional baselines.**
 
+| Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
+|---|---:|---:|---:|---:|---:|---:|
+| Average Stepwise 25% | 64.32 | 64.85 | 64.29 | 60.91 | 65.73 | 63.82 |
+| Semdedup 25%         | 64.13 | 65.25 | 63.82 | 60.01 | 65.28 | 64.33 |
+| BIS 25%              | **65.46** | **67.98** | 64.86 | 60.49 | 65.72 | **65.59** |
+| Full-Data            | 65.12 | 65.77 | **65.43** | **61.84** | **66.17** | 63.56 |
 
-
+--------------------------------
 
 ### Files
 - `src/internvl/`: training code used in our experiments
