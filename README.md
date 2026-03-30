@@ -1,3 +1,17 @@
+--------------------------------
+**Supplementary Table 1.  VisualProcessBench results on InternVL3-14B.** The **10% subset selected by BIS** achieves performance comparable to **full-data training**.
+
+| Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
+|---|---:|---:|---:|---:|---:|---:|
+| BIS-10%   | **66.05** | **67.39** | **66.34** | 62.65 | **66.41** | 64.21 |
+| Full-Data | 65.80 | 66.87 | 66.23 | **63.75** | 65.37 | **64.31** |
+
+--------------------------------
+
+
+
+
+
 ### Files
 - `src/internvl/`: training code used in our experiments
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
