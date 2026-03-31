@@ -31,6 +31,24 @@
 
 --------------------------------
 
+**Supplementary Table 4. Added 10% keep ratio additional breakdown**
+
+| Backbone | Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
+|---|---|---:|---:|---:|---:|---:|---:|
+| QwenVL | BIS10% | **64.63** | **66.05** | **64.14** | **61.33** | **64.64** | **66.05** |
+| QwenVL | Mix10% | 63.71 | 65.78 | 63.90 | 59.47 | 63.80 | 61.68 |
+| QwenVL | Δ | +0.92 | +0.27 | +0.24 | +1.86 | +0.84 | +4.37 |
+| QwenVL | LowMC10% | 63.40 | 65.92 | 63.13 | 57.91 | 64.82 | 60.58 |
+| QwenVL | Δ | +1.23 | +0.13 | +1.01 | +3.42 | -0.18 | +5.47 |
+| InternVL | BIS10% | **65.46** | **66.90** | **65.07** | **63.35** | **65.56** | **65.10** |
+| InternVL | Mix10% | 63.74 | 65.49 | 64.00 | 57.64 | 64.70 | 62.51 |
+| InternVL | Δ | +1.72 | +1.41 | +1.07 | +5.71 | +0.86 | +2.59 |
+| InternVL | LowMC10% | 61.75 | 64.54 | 61.80 | 55.18 | 61.98 | 60.52 |
+| InternVL | Δ | +3.71 | +2.36 | +3.27 | +8.17 | +3.58 | +4.58 |
+
+--------------------------------
+
+
 ### Files
 - `src/internvl/`: training code used in our experiments
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
