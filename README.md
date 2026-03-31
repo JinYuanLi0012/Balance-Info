@@ -31,7 +31,7 @@
 
 --------------------------------
 
-**Supplementary Table 4. Added 10% keep ratio additional breakdown**
+**Supplementary Table 4. Added 10% keep ratio additional breakdown.**
 
 | Backbone | Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
 |---|---|---:|---:|---:|---:|---:|---:|
