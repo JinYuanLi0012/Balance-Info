@@ -21,6 +21,16 @@
 
 --------------------------------
 
+**Supplementary Table 3. InternVL2.5-B results from three different random seeds (mean ± std).**
+
+| Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
+|---|---:|---:|---:|---:|---:|---:|
+| BIS-25% | 65.38 ± 0.13 | 67.39 ± 0.52 | 65.20 ± 0.30 | 60.25 ± 0.98 | 65.52 ± 0.19 | 65.69 ± 0.19 |
+| Mix-25% | 64.37 ± 0.29 | 66.37 ± 0.17 | 64.34 ± 0.39 | 58.58 ± 0.12 | 65.40 ± 0.37 | 63.15 ± 1.18 |
+| Δ | +1.01 | +1.03 | +0.86 | +1.67 | +0.12 | +2.54 |
+
+--------------------------------
+
 ### Files
 - `src/internvl/`: training code used in our experiments
 - `configs/zero_stage3_config.json`: DeepSpeed config used as a reference
