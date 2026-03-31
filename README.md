@@ -8,6 +8,8 @@
 
 --------------------------------
 
+![SemDeDup](Semdedup.png)
+
 **Supplementary Table 2.  Evaluation on VisualProcessBench for InternVL2.5-8B with two additional baselines.**
 
 | Method | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
