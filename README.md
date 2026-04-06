@@ -1,5 +1,3 @@
-![loss](training_loss_comparison_smoothed.png)
-
 --------------------------------
 **Supplementary Table 1.  VisualProcessBench results on InternVL3-14B.** The **10% subset selected by BIS** achieves performance comparable to **full-data training**.
 
@@ -69,7 +67,8 @@
 | Mixed-25% | 75.6% | 68.2% | 71.8% |
 | Low-MC-25% | 89.3% | 87.0% | 88.1% |
 
-
+--------------------------------
+![loss](training_loss_comparison_smoothed.png)
 --------------------------------
 
 ### Files
