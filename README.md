@@ -61,6 +61,16 @@
 
 --------------------------------
 
+**Supplementary Table 6. Retention of low-support positive steps (k=1,2) across different subsets.**
+| subset | k=1 | k=2 | k=1,2 |
+|---|---:|---:|---:|
+| BIS-25% | 17.6% | 20.5% | 19.1% |
+| Random-25% | 25.7% | 25.1% | 25.4% |
+| Mixed-25% | 75.6% | 68.2% | 71.8% |
+| Low-MC-25% | 89.3% | 87.0% | 88.1% |
+
+
+--------------------------------
 
 ### Files
 - `src/internvl/`: training code used in our experiments
