@@ -62,14 +62,25 @@
 **Supplementary Table 6. Retention of low-support positive steps (k=1,2) across different subsets.**
 | subset | k=1 | k=2 | k=1,2 |
 |---|---:|---:|---:|
-| BIS-25% | 17.6% | 20.5% | 19.1% |
+| BIS-25% | **17.6%** | **20.5%** | **19.1%** |
 | Random-25% | 25.7% | 25.1% | 25.4% |
 | Mixed-25% | 75.6% | 68.2% | 71.8% |
 | Low-MC-25% | 89.3% | 87.0% | 88.1% |
 
 --------------------------------
 ![loss](training_loss_comparison_smoothed.png)
+
 --------------------------------
+
+**Supplementary Table 7. adjacent-step score change.**
+| Threshold | BIS-25% | Random-25% | Mixed-25% | Low-MC-25% |
+|---|---:|---:|---:|---:|
+| \|Delta s\|  <= 0.05 | **74.67%** | **53.43%** | **48.57%** | **26.71%** |
+| \|Delta s\|  <= 0.10 | 84.11% | 74.92% | 69.51% | 50.35% |
+| \|Delta s\|  <= 0.20 | 91.55% | 90.61% | 87.04% | 77.47% |
+
+--------------------------------
+
 
 ### Files
 - `src/internvl/`: training code used in our experiments
