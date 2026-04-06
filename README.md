@@ -81,6 +81,16 @@
 
 --------------------------------
 
+**Supplementary Table 8. Added 7.67% keep ratio additional breakdown.**
+| Dataset | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
+|---|---:|---:|---:|---:|---:|---:|
+| BIS-7.67% | **64.74** | **66.25** | **63.87** | **61.94** | **65.84** | **64.72** |
+| Random-7.67% | 61.63 | 62.50 | 61.55 | 56.01 | 63.98 | 60.80 |
+| Low-MC-7.67% | 62.25 | 65.02 | 61.83 | 57.56 | 63.04 | 59.77 |
+| Mixed-7.67% | 63.22 | 65.48 | 63.15 | 57.76 | 64.05 | 61.44 |
+
+--------------------------------
+
 
 ### Files
 - `src/internvl/`: training code used in our experiments
