@@ -70,18 +70,10 @@
 --------------------------------
 ![loss](training_loss_comparison_smoothed.png)
 
---------------------------------
-
-**Supplementary Table 7. adjacent-step score change.**
-| Threshold | BIS-25% | Random-25% | Mixed-25% | Low-MC-25% |
-|---|---:|---:|---:|---:|
-| \|Delta s\|  <= 0.05 | **74.67%** | **53.43%** | **48.57%** | **26.71%** |
-| \|Delta s\|  <= 0.10 | 84.11% | 74.92% | 69.51% | 50.35% |
-| \|Delta s\|  <= 0.20 | 91.55% | 90.61% | 87.04% | 77.47% |
 
 --------------------------------
 
-**Supplementary Table 8. Added 7.67% keep ratio additional breakdown.**
+**Supplementary Table 7. Added 7.67% keep ratio additional breakdown.**
 | Dataset | Overall | MathVision | MathVerse | MMMU | DynaMath | WeMath |
 |---|---:|---:|---:|---:|---:|---:|
 | BIS-7.67% | **64.74** | **66.25** | **63.87** | **61.94** | **65.84** | **64.72** |
